@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 40px;
     padding: 0;
-    background-color: #002000;
+    background-color: #001200;
     color: #35bb35;
 }
 
 header { 
-    text-align: center;
+    text-align: left;
     color: #31cb00;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
 }
 
@@ -33,7 +33,7 @@ h3 {
 }
 
 a {
-    color: #8e3f02;
+    color: #e3b520;
     text-decoration: none;
 }
 
