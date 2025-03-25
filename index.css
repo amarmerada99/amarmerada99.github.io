@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 40px;
     padding: 0;
-    background-color: #152614;
-    color: #119822;
+    background-color: #002000;
+    color: #35bb35;
 }
 
 header { 
@@ -14,7 +14,7 @@ header {
 }
 
 section {
-    background: #2a7221;
+    background: #1e441e;
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -27,7 +27,7 @@ h1, h2 {
 }
 
 h3 {
-    color: #1e441e;
+    color: #002000;
     border-bottom: 2px solid #212121;
     padding-bottom: 5px;
 }
