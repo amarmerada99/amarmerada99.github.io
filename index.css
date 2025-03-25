@@ -2,20 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 40px;
     padding: 0;
-    background-color: #684300;
-    color: #eddd7a;
+    background-color: #152614;
+    color: #119822;
 }
 
 header { 
     text-align: center;
-    background-color: #25045a;
-    color: #d8b2f7;
+    color: #31cb00;
     padding: 20px;
     border-radius: 8px;
 }
 
 section {
-    background: rgb(162, 219, 212);
+    background: #2a7221;
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -28,13 +27,13 @@ h1, h2 {
 }
 
 h3 {
-    color: #00AAAA;
+    color: #1e441e;
     border-bottom: 2px solid #212121;
     padding-bottom: 5px;
 }
 
 a {
-    color: #0066cc;
+    color: #8e3f02;
     text-decoration: none;
 }
 
