@@ -20,13 +20,15 @@ img{
 }
 
 .bio{
-
+    text-align: center;
 }
 .headshot{
-
+    align-self: left;
+    height: 200px;
+    width: 300px;
 }
 .information{
-    
+    vertical-align: middle;
 }
 
 section {
