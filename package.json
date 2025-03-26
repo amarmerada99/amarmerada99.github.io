@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "name": "amarmerada99.github.io",
+  "version": "1.0.0",
+  "description": "github personal website update server",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amarmerada99/amarmerada99.github.io.git"
+  },
+  "author": "amarmerada99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amarmerada99/amarmerada99.github.io/issues"
+  },
+  "homepage": "https://github.com/amarmerada99/amarmerada99.github.io#readme"
+}
