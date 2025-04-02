@@ -76,6 +76,10 @@ a:hover {
     min-width: 300px;
 }
 
+.right-column #projects{
+    margin-top: 0; /*Align top element in right column with top elements in left column*/
+}
+
 .bio-top {
     display: flex;
     gap: 20px;
@@ -85,7 +89,7 @@ a:hover {
 
 .headshot-container {
     flex: 0 0 auto;
-    width: 200px; /* Fixed width for the headshot container */
+    width: 400px; /* Fixed width for the headshot container */
 }
 
 .headshot {
@@ -102,10 +106,16 @@ a:hover {
 
 .summary-container #summary {
     margin-top: 0; /* Remove top margin to align with headshot */
+    margin-bottom: 0;
 }
 
 .summary-container #summary h3 {
     margin-top: 0; /* Remove top margin from heading */
+}
+
+.summary-container #summary p {
+    margin-top: 0;
+    height: 65px;
 }
 
 @media (max-width: 768px) {
