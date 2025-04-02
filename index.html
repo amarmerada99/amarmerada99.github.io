@@ -5,60 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abigail Marmer-Adams | Software Engineer</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        /* Additional styles for two-column layout */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .left-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .right-column {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .bio-top {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            align-items: flex-start; /* Align items at the top */
+        }
+        
+        .headshot-container {
+            flex: 0 0 auto;
+            width: 200px; /* Fixed width for the headshot container */
+        }
+        
+        .headshot {
+            width: 100%;
+            height: auto;
+            display: block; /* Remove any potential extra space */
+        }
+        
+        .summary-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .summary-container #summary {
+            margin-top: 0; /* Remove top margin to align with headshot */
+        }
+        
+        .summary-container #summary h3 {
+            margin-top: 0; /* Remove top margin from heading */
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .bio-top {
+                flex-direction: column;
+            }
+            
+            .headshot-container {
+                width: 100%;
+                max-width: 200px;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+   
     <header>
         <h1>Abigail Marmer-Adams</h1>
         <h2>Software Engineer & Recent Computer Science Graduate</h2>
     </header>
-    <div class='bio'>
-        <img class='headshot' src='headshot_1.JPG' alt="Abbi herself">
-        <section class='information' id="summary">
-            <h3>Summary</h3>
-            <p>Recent computer science graduate and web developer focused on creating user-centered digital solutions through innovative design and development. Combining UX design expertise with strong software testing skills, I bring fresh technical knowledge and hands-on leadership experience to deliver impactful results.</p>
-        </section>
-        <section class='information' id="education">
-            <h3>Education</h3>
-            <p><strong>Bryn Mawr College</strong> (2020 - 2024) - Bachelors in Computer Science</p> 
-        </section>
-        <section class='information' id="contact">
-            <h3>Contact</h3>
-            <p>Email: <a href="mailto:amarmerada99@gmail.com">amarmerada99@gmail.com</a></p>
-            <p>LinkedIn: <a href="http://linkedin.com/in/abigailmarmeradams" target="_blank">linkedin.com/in/abigailmarmeradams</a></p>
-            <p>GitHub: <a href="https://github.com/amarmerada99"> https://github.com/amarmerada99 </a></p>
-        </section>
+    
+    <div class="container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <!-- Headshot and Summary in parallel -->
+            <div class="bio-top">
+                <div class="headshot-container">
+                    <img class='headshot' src='headshot_1.JPG' alt="Abbi herself">
+                </div>
+                <div class="summary-container">
+                    <section class='information' id="summary">
+                        <h3>Summary</h3>
+                        <p>Recent computer science graduate and web developer focused on creating user-centered digital solutions through innovative design and development. Combining UX design expertise with strong software testing skills, I bring fresh technical knowledge and hands-on leadership experience to deliver impactful results.</p>
+                    </section>
+                </div>
+            </div>
+            
+            <!-- Other sections in left column -->
+            <section class='information' id="education">
+                <h3>Education</h3>
+                <p><strong>Bryn Mawr College</strong> (2020 - 2024) - Bachelors in Computer Science</p>
+            </section>
+            
+            <section class='information' id="contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:amarmerada99@gmail.com">amarmerada99@gmail.com</a></p>
+                <p>LinkedIn: <a href="http://linkedin.com/in/abigailmarmeradams" target="_blank">linkedin.com/in/abigailmarmeradams</a></p>
+                <p>GitHub: <a href="https://github.com/amarmerada99"> https://github.com/amarmerada99 </a></p>
+            </section>
+            
+            <section id="experience">
+                <h3>Experience</h3>
+                <h4>QCDx LLC, Farmington CT - Web Developer (Contract)</h4>
+                <p>August 2024 - Present</p>
+                <ul>
+                    <li>Revamped company website to better showcase QCDx's cancer treatment optimization platform.</li>
+                    <li>Engineered responsive web applications using Next.js, driving a 300% increase in site traffic.</li>
+                    <li>Created high-fidelity prototypes and implemented modern design systems using Figma.</li>
+                </ul>
+                <h4>Movia Robotics, Bristol CT - Software Development Intern</h4>
+                <p>May 2023 - September 2023</p>
+                <ul>
+                    <li>Engineered and optimized robot-assisted instruction (RAI) software using ROS.</li>
+                    <li>Developed HIPAA-compliant data processing scripts, ensuring secure analytics.</li>
+                    <li>Led quality assurance for robot content modules.</li>
+                </ul>
+            </section>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="right-column">
+            <section id="projects">
+                <h3>Projects</h3>
+                <!-- Project content goes here -->
+            </section>
+            
+            <section id="skills">
+                <h3>Skills</h3>
+                <p><strong>Languages:</strong> JavaScript, Python, Java, C/C++, C#, R, HTML/CSS, SQL, Bash</p>
+                <p><strong>Web Technologies:</strong> Next.js, React, Node.js, Maven</p>
+                <p><strong>Design & UI:</strong> Figma</p>
+                <p><strong>Databases:</strong> PostgreSQL, MongoDB</p>
+                <p><strong>Development Tools:</strong> Git, GitHub, Android Studio, Visual Studio</p>
+                <p><strong>Other:</strong> Software Testing, QA, Team Leadership, Project Management</p>
+            </section>
+        </div>
     </div>
-    
-    <section id="experience">
-        <h3>Experience</h3>
-        <h4>QCDx LLC, Farmington CT - Web Developer (Contract)</h4>
-        <p>August 2024 - Present</p>
-        <ul>
-            <li>Revamped company website to better showcase QCDx's cancer treatment optimization platform.</li>
-            <li>Engineered responsive web applications using Next.js, driving a 300% increase in site traffic.</li>
-            <li>Created high-fidelity prototypes and implemented modern design systems using Figma.</li>
-        </ul>
-        <h4>Movia Robotics, Bristol CT - Software Development Intern</h4>
-        <p>May 2023 - September 2023</p>
-        <ul>
-            <li>Engineered and optimized robot-assisted instruction (RAI) software using ROS.</li>
-            <li>Developed HIPAA-compliant data processing scripts, ensuring secure analytics.</li>
-            <li>Led quality assurance for robot content modules.</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h3>Projects</h3>
-    </section>
-    <section id="skills">
-        <h3>Skills</h3>
-        <p><strong>Languages:</strong> JavaScript, Python, Java, C/C++, C#, R, HTML/CSS, SQL, Bash</p>
-        <p><strong>Web Technologies:</strong> Next.js, React, Node.js, Maven</p>
-        <p><strong>Design & UI:</strong> Figma</p>
-        <p><strong>Databases:</strong> PostgreSQL, MongoDB</p>
-        <p><strong>Development Tools:</strong> Git, GitHub, Android Studio, Visual Studio</p>
-        <p><strong>Other:</strong> Software Testing, QA, Team Leadership, Project Management</p>
-    </section>
-    
+   
 </body>
 </html>
